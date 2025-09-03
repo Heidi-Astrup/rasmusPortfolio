@@ -49,6 +49,19 @@ body {
   animation: fadeIn 0.5s;
 }
 
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  inline-size: none;
+}
+
+.nav.active {
+  background-color: var(--light-green);
+  color: var(--green);
+}
+
 h1,
 h2,
 h3,
@@ -370,7 +383,7 @@ img {
 
 @media (min-width: 992px) {
   #clients .headline-container {
-    margin-top: -300px;
+    margin-top: -220px;
   }
   #clients h2 {
     letter-spacing: 50px;
@@ -399,6 +412,7 @@ img {
   text-align: right;
 }
 .client-row:nth-child(2n) > article {
+  /* for every second client row switch sides of image and text*/
   text-align: left;
   margin: auto auto auto 0;
 }
